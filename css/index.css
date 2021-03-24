@@ -1,0 +1,214 @@
+﻿	* {
+	    margin: 0;
+	    padding: 0;
+	}
+	html{
+		height: 100%;
+	}
+	body{
+/*		background-color: rgb(41, 42, 43); */
+/*		background: radial-gradient(red, green, blue); /* 标准的语法 */
+		 /*background: radial-gradient(circle, red, yellow, green); /* 标准的语法 */ 
+		  background: radial-gradient(#ced0ca 20%, #ced0cc 30%, #ced0cf 50%); /* 标准的语法 */ 
+		  min-width: 1180px;
+	}
+	li:hover{
+		cursor:pointer;
+	}
+	#progress{
+		width: 20%;
+		margin-top: 8px;
+		outline: none; 
+		-webkit-appearance: none;/*清除系统默认样式*/  
+		height: 3px;/*横条的高度*/  
+	}
+	 /*拖动块的样式*/  
+   	#progress::-webkit-slider-thumb {  
+	    -webkit-appearance: none;/*清除系统默认样式*/  
+	    height:13px;/*拖动块高度*/  
+        width: 13px;/*拖动块宽度*/  
+        background: #FFFFFF;/*拖动块背景*/  
+	    border-radius: 50%; /*外观设置为圆形*/  
+	    border: solid 1px #ddd; /*设置边框*/  
+	}
+	#progress1{
+		width: 120px;
+		outline: none; 
+		-webkit-appearance: none;/*清除系统默认样式*/  
+		height: 3px;/*横条的高度*/  
+		display: block;
+		margin-top: -20px;
+		right: 64px;
+		position: absolute;
+	}
+	 /*拖动块的样式*/  
+   	#progress1::-webkit-slider-thumb {  
+	    -webkit-appearance: none;/*清除系统默认样式*/  
+	    height:15px;/*拖动块高度*/  
+        width: 15px;/*拖动块宽度*/  
+        background: #FFFFFF;/*拖动块背景*/  
+	    border-radius: 50%; /*外观设置为圆形*/  
+	    border: solid 1px #ddd; /*设置边框*/ 
+	}
+	#btn,#btn1,#jingyin,#loop{
+		background-color: none;
+		border: none;
+		width: 30px;
+		height: 30px;
+		outline:none;
+		margin-top: 2%;
+	}
+	#button>input:first-child{
+		margin-left: -120px!important;
+	}
+	aside{
+		text-align: center;
+		width:100%; 
+	}
+	#zong{
+		color: white;
+	}
+	li{
+		color: white;
+		margin-top: 1%;
+		list-style:none;
+		border-top: 0.1px solid white;
+		padding-left: 12%; 
+		padding-top: 2%;
+		padding-bottom:2%;
+	}
+	#playlist{
+		text-align: center;
+		width: 44%;
+	}
+	ul{
+		margin-top: 3%;
+		text-align: left;
+	}
+	#head{
+		margin-top: 4%;
+	}
+	#player{ 
+		width:100%;  
+	}
+	.last{
+		border-bottom: 0.1px solid white;
+		padding-bottom: 4%;
+	}
+
+	td{
+		width: 50%;
+	}
+	table{
+		margin-top: 4%;
+		text-align: center;
+	}
+	#button{
+		position: relative;
+		width: 550px;
+		margin: 0 auto;
+	}
+	#footer>p,#footer>span{
+		color: rgba(255,255,255,.8);
+		cursor:default;
+		line-height:22px;
+	    font-size: 14px;
+	    letter-spacing:1.44px;
+	}
+	#footer>p:hover,#footer>span:hover{
+		color: rgb(255,255,255);
+	}
+	span>a{
+		text-decoration: none;
+		color: rgba(255,255,255,.8);
+	}
+	span>a:hover{
+		color: rgb(255,255,255);
+		border-bottom: 1px solid #FFFFFF;
+	}
+p>a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+p>a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+p>a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+p>a:hover {
+    text-decoration: underline;
+}
+p>a{
+    color:rgba(255,255,255,.8);
+}
+/* 正在点击的链接*/
+p>a:active {
+    text-decoration: none;
+}
+	#footer{
+		clear: both;
+		position: absolute;
+		width: 100%;
+		bottom: 4%;
+		margin: 0 auto;
+		text-align: center;
+		min-width: 1180px;
+	}
+/*	@media (max-width: 1900px){ 
+		#progress1{
+	        margin-left:55%;
+	    }
+	}
+	@media (max-width: 1400px){ 
+		#progress1{
+	        margin-left:57.5%;
+	    }
+	}
+	@media (max-width: 1138px){ 
+		#progress1{
+	        margin-left:58.5%;
+	    }
+	}
+	@media (max-width: 1090px){ 
+		 #progress1{
+	        margin-left:59%;
+	    }
+	}
+	@media (max-width: 980px){ 
+		 #progress1{
+	        margin-left:59.5%;
+	    }
+	}
+	@media (max-width: 880px){
+	    #progress1{
+	        margin-left:62.5%;
+	    }
+	}
+	@media (max-width: 788px){
+	    #progress1{
+	        margin-left:63.5%;
+	    }
+	}
+	@media (max-width: 760px){
+	    #progress1{
+	        margin-left:66%;
+	    }
+	}
+	@media (max-width: 680px){
+	    #progress1{
+	        margin-left:69%;
+	    }
+	}
+	@media (max-width: 550px){
+	    #progress1{
+	        margin-left:76.5%;
+	    }
+	}
+	@media (max-width: 450px){
+	    #progress1{
+	        margin-left:79%;
+	    }
+	}*/

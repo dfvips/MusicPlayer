@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>DreamFly's 个人空间</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div id="head">	
+<h1 style="text-align: center; color: white;">DreamFly's 个人空间</h1>
+<audio id="v1" ontimeupdate="update();" src="买辣椒也用券-起风了.m4a">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+	您的浏览器不支持H5音频</audio></br>
+</div>
+	<table width="100%">
+		<tr>
+			<td><img src="CD.JPG" style="width: 38%;margin-left: 50%;padding-top: 3.5%;" id="cover"></td>
+			<td>
+				<div id="playlist">
+				<h2 style="color: #FFFFFF">我的最爱</h2>
+			    <ul>
+			        <li id="li1">01.买辣椒也用券 - 起风了</li>
+			        <li>02.杨宗纬、戚薇 - 为了遇见你</li>
+			        <li>03.杨宗纬 - 那个男人</li>
+			        <li>04.林峯 - Reunion</li>
+			        <li>05.高进 - 我的好兄弟</li>
+			        <li>06.陈奕迅 - 梦想天空分外蓝</li>
+			        <li>07.谢容儿 - 寂寞</li>
+			        <li class="last">08.广东雨神 - 广东爱情故事</li>
+			    </ul>
+			    </div>
+			</td>
+		</tr>
+	</table>
+<aside>
+	<div id="palyer">
+		<input type="range" id="progress" min="0" max="" value="0"  onchange="changeplay();" style="margin-top: 3%;" />
+		<span id="zong">00:00:00/00:00:00</span>
+		<div id="button">
+			<input input type="image" src="before.png"  id="btn1" class="btn1" onclick="before();">&nbsp;
+			<input input type="image" src="tui.png"  id="btn1" class="btn1" onclick="back();">&nbsp;
+			<input input type="image" src="play.png" id="btn" onclick="play();">&nbsp;
+			<input input type="image" src="jing.png" id="btn1" onclick="go();">&nbsp;
+			<input input type="image" src="after.png"  id="btn1"  onclick="after();">&nbsp;
+			<input input type="image" src="replay.png"  id="btn1" onclick="reset();">&nbsp;
+			<input input type="image" src="defalut.png"  id="loop" onclick="loop();" >&nbsp;
+			<input input type="image" src="sound.png"   id="jingyin" onclick="audiostop();">&nbsp;
+			<input type="range" id="progress1" min="0" max="100" value="100" onchange="audioadd();">
+		</div>
+	</div>
+</aside>
+<div id="footer">
+	    <p>Copyright © 2018-2021 DreamFly. All Rights Reserved.</p>
+	  	<span>梦丶随心飞©版权所有 | Email:420443292@qq.com</span>
+	  	<p><a href="http://www.beian.miit.gov.cn/"  target="view_window">粤ICP备20067386号</a></p>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
